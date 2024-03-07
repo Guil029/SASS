@@ -31,7 +31,7 @@ header {
   max-width: 760px;
 }
 .form-container h2 {
-  font-size: 3;
+  font-size: 3em;
   text-align: center;
 }
 .form-container form {
@@ -66,8 +66,8 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-color: yellow;
+  .container {
+    max-width: 80%;
   }
 }
 

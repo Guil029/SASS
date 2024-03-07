@@ -68,13 +68,17 @@ header {
             border: none;
             cursor: pointer;
             color: #fff;
+
+            &:hover {
+                background-color: darken(variaveis.$corSecundaria, 15%);
+            }
         }
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-    body {
-        background-color: yellow;
+    .container {
+        max-width: 80%;
     }
 }
 
