@@ -1,5 +1,13 @@
 @use 'config/reset';
 
+@mixin elementoForm() {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+
 body {
     background-color: #eee;
 }
@@ -15,7 +23,6 @@ header {
     background-color: yellow;
 }
 
-
 .form-container {
     height: calc(100vh - 70px);
     display: flex;
@@ -24,9 +31,20 @@ header {
     justify-content: center;
 
     form {
-        input, button {
-            padding: 8px;
-            display: block;
+        width: 100%;
+        max-width: 480px;
+        margin-top: 40px;
+
+        input {
+            @include elementoForm();
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        button {
+            @include elementoForm();
         }
     }
 }
+

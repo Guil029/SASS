@@ -27,9 +27,25 @@ header {
   align-items: center;
   justify-content: center;
 }
-.form-container form input, .form-container form button {
+.form-container form {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 40px;
+}
+.form-container form input {
   padding: 8px;
   display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.form-container form button {
+  padding: 8px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
